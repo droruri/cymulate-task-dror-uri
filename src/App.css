@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+.contact-us-page {
+    display: grid;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contact-us-header {
+    display: flex;
+    width: 70vw;
+    gap: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-separator {
+    margin-right: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.contact-us-header-button {
+    background: transparent;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .05em;
+    color: #070723;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-us-actions {
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-us-actions-content {
+    color: white;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contact-form-error {
+    color: #ef2c1d !important;
+    display: block;
+    font-size: 12px;
+}
+
+.contact-form-row {
+    display: flex;
+    gap: 10px
+}
+
+.contact-form-row > * {
+    flex: 1;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us-button {
+    height: 40px;
+    border-radius: 20px;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.contact-us-button-blue {
+    border-color: #0e54c4;
+    background-color: #0e54c4;
+    color: white;
+}
+
+.contact-us-button-blue:hover {
+    color: #0e54c4;
+    border-color: #0e54c4;
+    background-color: white;
+}
+
+.contact-us-button-transparent {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.contact-us-button-transparent:hover {
+    color: #0e54c4;
+    background-color: white;
+}
+
+
+.company-leaders-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    background-color: #f6f6f6;
+    align-items: center;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .company-leaders-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    .company-leaders-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+.company-leaders {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    align-items: center;
+}
+
+.leader-background {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border-bottom: 10px #0e54cd solid;
+    align-items: center;
+    width: 250px;
+    gap: 20px;
+    background-color: white;
+}
+
+.leader-photo {
+    transform: translate(0%, -10%);
+}
+
+.bold-text {
+    font-weight: bold;
 }
